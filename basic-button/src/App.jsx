@@ -1,13 +1,13 @@
 import './App.css'
 
-function App() {
-
+function MyButton() {
   return (
-    <div>
-      <h1>Basic Button</h1>
-      <button>Click Me</button>
-    </div>
-  )
+    <button>Click Me</button>
+  );
 }
 
-export default App
+export default function App() {
+  return (
+    <MyButton/>
+  );
+}
