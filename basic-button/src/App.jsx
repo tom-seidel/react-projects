@@ -2,7 +2,10 @@ import './App.css'
 
 function MyButton() {
   return (
-    <button>Click Me</button>
+    <> {/* Wrapper */}
+      <h1>My Button</h1>
+      <button>Click Me</button>
+    </>
   );
 }
 
