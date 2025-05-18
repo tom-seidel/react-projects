@@ -1,15 +1,18 @@
+import { useState } from 'react'
 import './App.css'
 
-const text = 'It works!';
+export default function App() {
+const [text, setText] = useState('off');
 
-function App() {
+const toggleText = () => {
+  setText(text === 'off' ? 'on' : 'off');
+}
 
   return (
     <>
-      <h1>Toggle Text</h1>
+      {/* Toggle Button */}
+      <button onClick={toggleText}>Toggle Text</button>
       <p>{text}</p>
     </>
   )
 }
-
-export default App
